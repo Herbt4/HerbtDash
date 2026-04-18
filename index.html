@@ -1,27 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>HerbtDash</title>
+  <meta charset="UTF-8">
+  <title>HerbtDash Courier</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
-    body { font-family: Arial; background: #0f172a; color: white; text-align: center; }
-    h1 { color: #22c55e; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background: #020617;
+    }
+
+    header h2 {
+      color: #22c55e;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+    }
+
+    .green {
+      color: #22c55e;
+    }
+
     .btn {
       background: #22c55e;
-      padding: 15px;
+      padding: 15px 25px;
       color: black;
+      border-radius: 10px;
       text-decoration: none;
-      border-radius: 8px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+    }
+
+    input, textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      margin-top: 30px;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #22c55e;
+      padding: 15px;
+      border-radius: 50%;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
     }
   </style>
 </head>
+
 <body>
 
-  <h1>HerbtDash</h1>
-  <p>Entregas rápidas y seguras en tu ciudad</p>
+<header>
+  <h2>HerbtDash</h2>
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#como">Cómo funciona</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
 
-  <a class="btn" href="https://wa.me/51936781369">
-    Solicitar envío
+<section class="hero">
+  <h1>Entregas <span class="green">rápidas</span>, seguras y sin complicaciones</h1>
+  <p>Recoge y entrega el mismo día en tu ciudad</p>
+  <a class="btn" href="https://wa.me/51936781369?text=Hola%20quiero%20hacer%20un%20envio%20con%20HerbtDash">
+    Pedir envío por WhatsApp
   </a>
+</section>
+
+<section id="servicios">
+  <h2>Servicios</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Envíos rápidos</h3>
+      <p>Entregas en pocas horas</p>
+    </div>
+    <div class="card">
+      <h3>Seguimiento</h3>
+      <p>Estado de tu envío en tiempo real</p>
+    </div>
+    <div class="card">
+      <h3>Cobertura</h3>
+      <p>Servicio en toda la ciudad</p>
+    </div>
+  </div>
+</section>
+
+<section id="como">
+  <h2>¿Cómo funciona?</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>1. Solicita</h3>
+      <p>Escríbenos por WhatsApp</p>
+    </div>
+    <div class="card">
+      <h3>2. Recogemos</h3>
+      <p>Vamos a tu ubicación</p>
+    </div>
+    <div class="card">
+      <h3>3. Entregamos</h3>
+      <p>Entrega rápida y segura</p>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Solicita tu envío</h2>
+  <input type="text" placeholder="Nombre"><br>
+  <input type="text" placeholder="Teléfono"><br>
+  <input type="text" placeholder="Dirección"><br>
+  <textarea placeholder="Detalle del envío"></textarea><br>
+  <a class="btn" href="https://wa.me/51936781369?text=Hola%20quiero%20hacer%20un%20envio%20con%20HerbtDash">
+    Enviar solicitud
+  </a>
+</section>
+
+<footer>
+  <p>HerbtDash Courier © 2026</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/51936781369?text=Hola%20quiero%20hacer%20un%20envio%20con%20HerbtDash">💬</a>
 
 </body>
 </html>
